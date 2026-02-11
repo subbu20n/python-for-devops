@@ -12,7 +12,7 @@ my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
 ```python
 print(my_dict['name'])  # Output: John
 ```
-
+ 
 ## Modifying and Adding Elements:
 ```python
 my_dict['age'] = 26  # Modifying a value
