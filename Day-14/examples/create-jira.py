@@ -8,7 +8,7 @@ url = "https://veeramallaabhishek.atlassian.net/rest/api/3/issue"
 
 API_TOKEN = ""
 
-auth = HTTPBasicAuth("", API_TOKEN)
+auth = HTTPBasicAuth("", API_TOKEN)       
 
 headers = {
   "Accept": "application/json",
@@ -47,8 +47,8 @@ response = requests.request(
    "POST",
    url,
    data=payload,
-   headers=headers,
+   headers=headers, 
    auth=auth
 )
 
-print(json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(",", ": ")))
+print(json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(",", ": "))) 
